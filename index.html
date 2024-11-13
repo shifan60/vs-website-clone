@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: { screens: {
+      'sm': '640px',
+      // => @media (min-width: 640px) { ... }
+
+      'md': '768px',
+      // => @media (min-width: 768px) { ... }
+
+      'lg': '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      'xl': '1280px',
+      // => @media (min-width: 1280px) { ... }
+
+      '2xl': '1536px',
+      // => @media (min-width: 1536px) { ... }
+    }
+  },
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+      </script>
+    <title>Visual Studio Code</title>
+</head>
+<body>
+<section class="relative">
+   <!-- Navbar -->
+   <nav class="h-16 bg-neutral-950 flex items-center justify-between w-screen px-5 md:px-10 lg:px-20 2xl:px-36 fixed top-0 left-0 right-0 ">
+    
+    <div class="flex">
+        <div class="text-white text-lg w-56 flex gap-3">
+            <img class="size-6" src="/logo.png" alt="image">
+            <h1 class="font-semibold">Visual Studio Code</h1>  
+        </div>
+        <div class="hidden xl:flex">
+            <li class="flex gap-6 ">
+                <ul class="text-gray-400 hover:text-white text-md font-medium">Docs</ul>
+                <ul class="text-gray-400 hover:text-white text-md font-medium">Updates</ul>
+                <ul class="text-gray-400 hover:text-white text-md font-medium">Blog</ul>
+                <ul class="text-gray-400 hover:text-white text-md font-medium">API</ul>
+                <ul class="text-gray-400 hover:text-white text-md font-medium">Extensions</ul>
+                <ul class="text-gray-400 hover:text-white text-md font-medium">FAQ</ul>
+                <ul class="text-gray-400 hover:text-white text-md font-medium">GitHub Copilot </ul>
+            </li>
+            </div>
+        </div>
+        <div class="flex gap-2 hidden lg:flex">
+        <div class="flex gap-2 items-center ">
+            <div class="hover:rounded-md hover:bg-zinc-800 p-2 hover:border hover:border-gray-600">
+                <img class="size-5" src="/brightness.svg" alt="image">
+            </div>
+            <form class=" border border-gray-700 rounded-md hover:border-blue-600 flex">
+                <button class="p-2 size-8"> <img src="/searchbar.svg" alt="image">
+                </button>
+            <input type="text" placeholder="Search Docs" class="bg-transparent text-white text-sm w-40 border-none outline-none">
+            </form>
+        </div>
+        <div class="flex items-center">
+<button class="bg-blue-500 rounded-md px-4 py-1 text-white font-medium hover:bg-sky-700">
+    Download 
+</button>
+        </div>
+        </div>
+        <div class=" text-slate-400 flex lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
+              </svg>       
+        </div>  
+        </nav>   
+</section>
+<section class="bg-neutral-950 ">
+<!-- code faster with AI -->
+<div class="  flex flex-col text-center">
+    <div class="">
+        <h1 class="text-white font-bold text-[45px] md:text-[50px] lg:text-[60px] xl:text-[70px] mt-32 ">
+            Code faster with AI
+        </h1>
+        <p class="text-gray-400 text-[17px] md:text-[25px] font-medium">
+            Visual Studio Code with GitHub Copilot supercharges your <br> code with AI-powered suggestions, right in your editor.
+        </p>
+    </div>
+    <div class="mt-9">
+        <button class="bg-blue-500 text-white font-semibold lg:font-medium text:md lg:text-lg px-3 py-2 lg:px-5 lg:py-2 rounded-md hover:bg-sky-700">
+Download for Windows
+        </button>
+        <button class="bg-zinc-800 border border-gray-600 text-white font-semibold lg:font-medium text-md lg:text-lg p-2 rounded-md  lg:px-4  lg:py-2 ml-2 ">
+Try GitHub Copilot
+        </button>
+    </div>
+    <div class="mt-3 text-transparent  hover:text-slate-400 hover:text-xs">
+        By using VS Code, you agree to its <button class="underline">license</button> and <button class="underline"> privacy statement</button>.
+    </div>
+    <div class="bg-neutral-950 px-5 md:px-10 lg:px-20 xl:px-36 2xl:px-[350px] mt-6">
+        <img class="max-w[100%]" src="/home-screenshot-copilot.png" alt="image"> 
+    </div>
+</div>
+</section>
+<!-- Code with GitHub Copilot -->
+<section>
+<div class="flex justify-between md:flex-row flex-col bg-neutral-950 px-5 md:px-10 lg:px-20 xl:px-36 2xl:px-[350px] ">
+<div class="mt-12 lg:mt-24 flex flex-col text-white  xl:w-[360px]">
+<div class="text-3xl font-medium">
+    Code with GitHub Copilot
+</div>
+<p class="mt-5 text-gray-400 font-semibold">
+    Write code faster and smarter with GitHub  Copilot, your AI pair programmer.
+</p>
+<div class="mt-2 text-blue-400 underline font-medium">Try GitHub Copilot free for 30 days</div>
+<p class="mt-10">
+   <span class="underline text-blue-400 font-medium">Completions</span> <span class="text-gray-400 font-semibold"> present suggestions automatically to help you code more efficiently.</span>
+</p>
+<p class="mt-6">
+<span class="underline text-blue-400 font-medium">Copilot Chat </span> <span class="text-gray-400 font-semibold">understands the context of your code, workspace, extensions, settings, and more.</span> 
+</p>
+<p class="mt-5">
+    <span class="underline text-blue-400 font-medium">Inline Chat</span> <span class="text-gray-400 font-semibold">enables you to iteratively generate edits and get answers to quick questions, directly on your code.</span> 
+</p>
+</div>
+<div class="mt-12 lg:mt-24">
+<img class=" md:w-[650px]   xl:w-[770px]" src="./copilot.png" alt="image">
+
+</div>
+</div>
+</section>
+<!-- Code in any language -->
+<section class="bg-neutral-950 px-5 md:px-10 lg:px-20 xl:px-36 2xl:px-[350px] py-12 lg:py-32 bg-neutral-950 flex  lg:gap-28  md:flex-row flex-col md:justify-between">
+    <div class="flex flex-col gap-4">
+       <h1 class="text-white font-medium text-3xl">
+        Code in any language
+       </h1> 
+    <p class="text-gray-400 w-[350px] font-semibold">
+        VS Code supports almost every major programming language. Several ship in the box, like JavaScript, TypeScript, CSS, and HTML, but extensions for others can be found in the VS Code Marketplace.
+    </p>
+    </div>
+    <div class="grid grid-cols-2 gap-x-16 lg:grid-cols-3 lg:gap-x-30 xl:gap-x-36 gap-y-4 lg:gap-y-0 mt-5 md:mt-0 max-w-[100%]">
+    <div class="text-gray-400 flex items-center text-md text-base  font-mono">
+    <img class="w-10" src="/language-js.png" alt="image">JavaScript
+    </div>
+    <div  class="text-gray-400 flex items-center text-md text-base  font-mono">
+    <img class="w-10" src="/language-ts.png" alt="image">TypeScript
+    </div>
+    <div class="text-gray-400 flex items-center text-md text-base  font-mono" > 
+    <img class="w-10"  src="/language-python.png" alt="image">Python
+    </div>
+    <div class="text-gray-400 flex items-center text-md text-base  font-mono">
+    <img class="w-10"  src="/language-cs.png" alt="image">C#
+    </div>
+    <div class="text-gray-400 flex items-center text-md text-base  font-mono">
+    <img class="w-10"  src="/language-cpp.png" alt="image">C++
+    </div>
+    <div class="text-gray-400 flex items-center text-md text-base  font-mono">
+    <img class="w-10"  src="/language-html.png" alt="image">HTML
+    </div>
+    <div class="text-gray-400 flex items-center text-md text-base  font-mono">
+    <img class="w-10"  src="/language-java.png" alt="image">Java
+    </div>
+    <div class="text-gray-400 flex items-center text-md text-base  font-mono">
+    <img class="w-10"  src="/language-json.png" alt="image">JSON
+    </div>
+    <div class="text-gray-400 flex items-center text-md text-base  font-mono">
+    <img class="w-10"  src="/language-php.png" alt="image">PHP
+    </div>
+    <div class="text-gray-400 flex items-center text-md text-base  font-mono">
+    <img class="w-10"  src="/language-markdown.png" alt="image">Markdown
+    </div>
+    <div class="text-gray-400 flex items-center text-md text-base  font-mono">
+    <img class="w-10"  src="/language-powershell.png" alt="image">Powershell
+    </div>
+    <div class="text-gray-400 flex items-center text-md text-base  font-mono">
+    <img class="w-10"  src="/language-yaml.png" alt="image">YAML
+    </div>
+    </div>
+    </section> 
+<!-- Code with Extensions -->
+<section class="bg-neutral-950 px-5 md:px-10 lg:px-20 xl:px-36 2xl:px-[350px] flex gap-16 md:flex-row flex-col md:justify-between">
+    <div class="">
+    <h1 class="text-white font-medium text-3xl ">
+        Code with Extensions
+    </h1>
+    <p class="text-gray-400 font-semibold w-[360px] 2xl:w-50 mt-4">
+        Whether you're a beginner or an expert, we've got you covered. Choose from hundreds of extensions to power up your VS Code experience.
+    </p> 
+    <button class="text-blue-400 underline mt-2 hover:decoration-blue-300">
+        Learn more about extensions
+    </button>
+    </div>
+    
+    <div class="flex flex-col items-center gap-5 lg:justify-between"> 
+        <div class="grid grid-cols-3 gap-4 w-[400px] md:w-[100%]">
+            <button class="flex bg-zinc-900 border border-gray-600 hover:border-gray-400 rounded-md  gap-3 p-4 opacity-70">
+                <img class="w-10" src="/python-extension.png" alt="image">
+                <div class="">
+                <h1 class="font-medium text-start text-white hidden xl:flex">
+                Python
+                </h1>
+                <p class="text-gray-400 text-sm font-medium  text-start mt-2 hidden xl:flex">
+                Adds rich language support for Python
+                </p>
+                </div>
+            </button>
+            <button class="flex bg-zinc-900 border border-gray-600 hover:border-gray-400 rounded-md  gap-3 p-4 opacity-70">
+             <img class="w-10" src="/copilot-extension.png" alt="image">
+             <div class="">
+                <h1 class="font-medium text-start text-white hidden xl:flex">
+                GitHub Copilot
+                </h1>
+                <p class="text-gray-400 text-sm font-medium text-start mt-2 hidden xl:flex">
+                Your AI pair programmer
+                </p>
+                </div>
+            </button>
+            <button class="flex bg-zinc-900 border border-gray-600 hover:border-gray-400 rounded-md  gap-3 p-4 opacity-70">
+            <img class="w-10" src="/c-extension.png" alt="image">
+            <div class="">
+                <h1 class="font-medium text-start text-white hidden xl:flex">
+                C/C++
+                </h1>
+                <p class="text-gray-400 text-sm font-medium text-start mt-2 hidden xl:flex">
+                    Adds rich language support for C/C++ 
+                </p>
+                </div>
+            </button>
+            <button class="flex bg-zinc-900 border border-gray-600 hover:border-gray-400 rounded-md  gap-3 p-4 opacity-50 ">
+             <img class="w-10 rounded-md" src="/jupyter-extension.png" alt="image">   
+             <div class="">
+                <h1 class="font-medium text-start text-white hidden xl:flex">
+                Jupyter
+                </h1>
+                <p class="text-gray-400 text-sm font-medium text-start mt-2 hidden xl:flex">
+                    Language support for Jupyter Notebooks
+                </p> 
+                </div>
+            </button>
+            <button class="flex bg-zinc-900 border border-gray-600 hover:border-gray-400 rounded-md gap-3 p-4 opacity-50">
+            <img class="w-10" src="/gitlens-extension.png" alt="image">
+            <div class="">
+                <h1 class="font-medium text-start text-white hidden xl:flex">
+                GitLens
+                </h1>
+                <p class="text-gray-400 text-sm font-medium text-start mt-2 hidden xl:flex">
+                    Supercharge your Git experience
+                </p>
+                </div>
+            </button>
+            <button class="flex bg-zinc-900 border border-gray-600 hover:border-gray-400 rounded-md  gap-3 p-4 opacity-50 ">
+            <img class="w-10" src="/cs-dev-kit-extension.png" alt="image">
+            <div class="">
+                <h1 class="font-medium text-start text-white hidden xl:flex">
+                C# Dev Kit
+                </h1>
+                <p class="text-gray-400 text-sm font-medium text-start mt-2 hidden xl:flex">
+                    Powerful tools for your C# environment
+                </p>
+                </div>
+            </button>
+            <button class="flex bg-zinc-900 border border-gray-600 hover:border-gray-400 rounded-md  gap-3 p-4 opacity-25">
+            <img class="w-10" src="/github-pull-requests-extension.png" alt="image">
+            <div class="">
+                <h1 class="font-medium text-start text-white hidden xl:flex">
+                GiHub Codespaces 
+                </h1>
+                <p class="text-gray-400 text-sm font-medium text-start mt-2 hidden xl:flex">
+                     Fully configured dev environments in the cloud
+                </p>
+                </div>
+            </button>
+            <button class="flex bg-zinc-900 border border-gray-600 hover:border-gray-400 rounded-md  gap-3 p-4 opacity-25">
+            <img class="w-10" src="/github-pull-requests-extension.png" alt="image">
+            <div class="">
+                <h1 class="font-medium text-start text-white hidden xl:flex">
+                GitHub Pull Requests
+                </h1>
+                <p class="text-gray-400 text-sm font-medium text-start mt-2 hidden xl:flex">
+                     Collaborate on issues and pull requests
+                </p>
+                </div>
+            </button>
+            <button class="flex bg-zinc-900  border border-gray-600 hover:border-gray-400 rounded-md  gap-3 p-4 opacity-25">
+            <img class="w-10" src="/remote-extension.png" alt="image">
+            <div class="">
+                <h1 class="font-medium text-start text-white hidden xl:flex">
+                 Remote Development
+                </h1>
+                <p class="text-gray-400 text-sm font-medium text-start mt-2 hidden xl:flex">
+                     Open folders in a container on a remote machine
+                </p>
+            </div>
+            </button>
+    
+        </div>
+        <div class="bg-neutral-950 text-gray-400 text-xs font-semibold">
+            View 50k+ extensions in the 
+            <button class="text-blue-400 underline text-xs font-semibold">
+                Extension Marketplace
+            </button>
+            
+        </div>
+    </div>
+    </section>
+    <!-- Fully customizable -->
+    <section>
+        <div class="flex justify-between md:flex-row flex-col bg-neutral-950 px-5 md:px-10 lg:px-20 xl:px-36 2xl:px-[350px]">
+        <div class="mt-12 lg:mt-24 flex flex-col text-white  xl:w-[360px]">
+        <div class="text-3xl font-medium">
+            Fully customizable
+        </div>
+        <p class="mt-5 text-gray-400 font-semibold">
+            Customize your VS Code UI and layout so that it fits your coding style.
+        </p>
+        <p class="mt-10">
+           <span class="underline text-blue-400 font-medium">Color themes</span> <span class="text-gray-400 font-semibold"> let you modify the colors in VS Code's user interface to suit your preferences and work environment.</span>
+        </p>
+        <p class="mt-6">
+        <span class="underline text-blue-400 font-medium">Settings Sync </span> <span class="text-gray-400 font-semibold"> enables you to share your user settings across your VS Code instances with the Settings Sync feature.</span> 
+        </p>
+        <p class="mt-5">
+            <span class="underline text-blue-400 font-medium">Profiles</span> <span class="text-gray-400 font-semibold">let you create sets of customizations and quickly switch between them or share them with others. </span> 
+        </p>
+        </div>
+        <div class="mt-12 lg:mt-24">
+        <img class=" md:w-[650px]   xl:w-[770px]" src="/swimlane-customized.png" alt="image">
+        
+        </div>
+        </div>
+        </section>
+                
+        
+    <!-- Fully customizable -->
+    <section>
+        <div class="flex justify-between md:flex-row flex-col bg-neutral-950 px-5 md:px-10 lg:px-20 xl:px-36 2xl:px-[350px]">
+        <div class="mt-12 lg:mt-24 flex flex-col text-white  xl:w-[360px]">
+        <div class="text-3xl font-medium">
+            Fully customizable
+        </div>
+        <p class="mt-5 text-gray-400 font-semibold">
+            Customize your VS Code UI and layout so that it fits your coding style.
+        </p>
+        <p class="mt-10">
+           <span class="underline text-blue-400 font-medium">Color themes</span> <span class="text-gray-400 font-semibold"> let you modify the colors in VS Code's user interface to suit your preferences and work environment.</span>
+        </p>
+        <p class="mt-6">
+        <span class="underline text-blue-400 font-medium">Settings Sync </span> <span class="text-gray-400 font-semibold"> enables you to share your user settings across your VS Code instances with the Settings Sync feature.</span> 
+        </p>
+        <p class="mt-5">
+            <span class="underline text-blue-400 font-medium">Profiles</span> <span class="text-gray-400 font-semibold">let you create sets of customizations and quickly switch between them or share them with others. </span> 
+        </p>
+        </div>
+        <div class="mt-12 lg:mt-24">
+        <img class=" md:w-[650px]   xl:w-[770px]" src="/swimlane-customized.png" alt="image">
+        
+        </div>
+        </div>
+        </section>
+        
+ <!-- Code anywhere -->
+ <section>
+  <div class="flex justify-between md:flex-row flex-col bg-neutral-950 px-5 md:px-10 lg:px-20 xl:px-36  2xl:px-[350px] ">
+  <div class="mt-12 lg:mt-24 flex flex-col text-white  xl:w-[360px]">
+  <div class="text-3xl font-medium">
+      Code anywhere
+  </div>
+  <p class="mt-5 text-gray-400 font-semibold">
+      Code wherever you're most productive, whether you're connected to the cloud, a remote repository, or in the browser with VS Code for the Web (vscode.dev).
+  </p>
+  <p class="mt-10">
+     <span class="underline text-blue-400 font-medium">Built-in Source Control</span> <span class="text-gray-400 font-semibold"> empowers you with Git support out-of-the-box. Many other source control providers are available through extensions.</span>
+  </p>
+  <p class="mt-6">
+  <span class="underline text-blue-400 font-medium">GiHub Codespaces </span> <span class="text-gray-400 font-semibold">provides cloud-powered development environments for any activity - whether it's a long-term project, or a short-term task like reviewing a pull request.</span> 
+  </p>
+  </div>
+  <div class="mt-12 lg:mt-24">
+  <img class=" md:w-[650px]   xl:w-[770px]" src="/swimlane-anywhere.png" alt="image">
+  </div>
+  </div>
+  </section>
+  <!-- Code with rich features -->
+  <section class=" bg-neutral-950 px-5 md:px-10 lg:px-20 xl:px-36 2xl:px-[350px]  py-5 md:py-10 lg:py-20">
+      <div class="flex flex-col items-center md:text-center gap-5 text-md">
+          <h1 class="text-white text-3xl font-medium ">
+              Code with rich features
+          </h1>
+          <p class="text-gray-400 font-semibold md:w-[520px]  ">
+              There's a lot more to an editor. Whether it's using built-in features or  rich  extensions, there's something for everyone.
+          </p>
+      </div>
+  </section>
+<section class="bg-neutral-950 px-5 md:px-10 lg:px-20 xl:px-36 2xl:px-[350px]  ">
+<div class="grid lg:grid-cols-4 gap-4 sm:grid-cols-1 md:grid-cols-2">
+<button class="flex flex-col bg-zinc-900 border border-gray-600 hover:border-gray-500 rounded-md  p-4 text-start ">
+  <div class="rounded-md bg-zinc-800 p-3 ">
+      <img class="w-6 " src="/codicon-terminal (1).svg" alt="image">
+  </div>
+  <div class="mt-6">
+      <h1 class="font-medium text-white">
+      Integrated terminal
+      </h1>
+      <p class="text-gray-400 text-sm font-medium mt-3  ">
+          Use your favorite shell whether it's Zsh,Pwsh, or git bash, all inside the editor
+      </p>
+      </div>
+  </button>
+  <button class="flex flex-col bg-zinc-900 border border-gray-600 hover:border-gray-500 rounded-md  p-4 text-start ">
+      <div class="rounded-md bg-zinc-800 p-3 ">
+          <img class="w-6 " src="/codicon-debug.svg" alt="image">
+      </div>
+      <div class="mt-6">
+          <h1 class="font-medium text-white">
+          Run code
+          </h1>
+          <p class="text-gray-400 text-sm font-medium mt-3 ">
+              Run and debug your code without leaving your editor.
+          </p>
+          </div>
+      </button>
+      <button class="flex flex-col bg-zinc-900 border border-gray-600 hover:border-gray-500 rounded-md  p-4 text-start ">
+          <div class="rounded-md bg-zinc-800 p-3 ">
+              <img class="w-5" src="/codicon-version-control.svg" alt="image">
+          </div>
+          <div class="mt-6">
+              <h1 class="font-medium text-white">
+              Version control
+              </h1>
+              <p class="text-gray-400 text-sm font-medium mt-3 ">
+                  Built-in support for git and many other source controlproviders.
+              </p>
+              </div>
+          </button>
+          <button class="flex flex-col bg-zinc-900 border border-gray-600 hover:border-gray-500 rounded-md  p-4 text-start ">
+              <div class="rounded-md bg-zinc-800 p-3 ">
+                  <img class="w-6" src="/codicon-build-tasks.svg" alt="image">
+              </div>
+              <div class="mt-6">
+                  <h1 class="font-medium text-white">
+                  Build tasks
+                  </h1>
+                  <p class="text-gray-400 text-sm font-medium mt-3 ">
+                      Run tools and analyze their results from within VS code
+                  </p>
+                  </div>
+              </button>
+              <button class="flex flex-col bg-zinc-900 border border-gray-600 hover:border-gray-500 rounded-md  p-4 text-start ">
+                  <div class="rounded-md bg-zinc-800 p-3 ">
+                      <img class="w-6" src="/codicon-local-history.svg" alt="image">
+                  </div>
+                  <div class="mt-6">
+                      <h1 class="font-medium text-white">
+                      Local history
+                      </h1>
+                      <p class="text-gray-400 text-sm font-medium mt-3 ">
+                          Never lose your changes with automatically tracked local history
+                      </p>
+                      </div>
+                  </button>
+                  <button class="flex flex-col bg-zinc-900 border border-gray-600 hover:border-gray-500 rounded-md  p-4 text-start ">
+                      <div class="rounded-md bg-zinc-800 p-3 ">
+                          <img class="w-6" src="/codicon-themes.svg" alt="image">
+                      </div>
+                      <div class="mt-6">
+                          <h1 class="font-medium text-white">
+                          Themes
+                          </h1>
+                          <p class="text-gray-400 text-sm font-medium mt-3 ">
+                              Your theme is an extension of your personality.Add some flair to your editor and add your touch.
+                          </p>
+                          </div>
+                      </button>  
+                      <button class="flex flex-col bg-zinc-900 border border-gray-600 hover:border-gray-500 rounded-md  p-4 text-start ">
+                          <div class="rounded-md bg-zinc-800 p-3 ">
+                              <img class="w-6" src="/codicon-accessibility.svg" alt="image">
+                          </div>
+                          <div class="mt-6">
+                              <h1 class="font-medium text-white">
+                              Accessibility
+                              </h1>
+                              <p class="text-gray-400 text-sm font-medium mt-3 ">
+                                  Optimized experience for screen readers,high contrast themes,and keyboard-only navigation.
+                              </p>
+                              </div>
+                          </button>  
+                          <button class="flex flex-col bg-zinc-900 border border-gray-600 hover:border-gray-500 rounded-md  p-4 text-start ">
+                              <div class="rounded-md bg-zinc-800 p-3 ">
+                                  <img class="w-6" src="/codicon-web.svg" alt="image">
+                              </div>
+                              <div class="mt-6">
+                                  <h1 class="font-medium text-white">
+                                  Web support
+                                  </h1>
+                                  <p class="text-gray-400 text-sm font-medium mt-3 ">
+                                      whether you are on your phone,tablet,or desktop,you can access your code from anywhere.
+                                  </p>
+                                  </div>
+                              </button>   
+</div>
+</section>
+<div class="bg-neutral-950 px-5 md:px-10 lg:px-20 xl:px-36 2xl:px-[350px]  pt-10 md:pt-24 justify-between flex pb-6">
+<div class="flex gap-6">
+<img class="w-5" src="/x-icon.svg" alt="image">
+<img src="/github-icon.svg" alt="image">
+<img src="/youtube-icon.svg" alt="image">
+</div>
+<div class="">
+<img src="/microsoft.svg" alt="image">
+</div>
+</div>
+<div class="bg-neutral-950 px-5 md:px-10 lg:px-20 xl:px-36 2xl:px-[350px]  pb-10 md:pb-24">
+<div class="text-gray-400 font-semibold flex gap-6 text-xs">
+  <ul>Support</ul>
+  <ul>privacy</ul>
+  <ul>Terms of Use</ul>
+  <ul>License</ul>
+</div>
+</div>
+</body>
+</html>   
